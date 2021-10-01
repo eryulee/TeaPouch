@@ -3,7 +3,8 @@
 - [Overview](#overview)
 At TeaPouch, we provide the best quality  loose leaf organic teas to create our distinctive collection.  Our passion is to elevate the health and happiness of our customers, one cup at a time.
 
-- *[MVP](#mvp)
+- [MVP](#mvp)
+***
    *Have a RESTful JSON API
    *Ruby On Rails Server
    *Build a database with at least 3 tables
