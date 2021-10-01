@@ -5,10 +5,10 @@ At TeaPouch, we provide the best quality  loose leaf organic teas to create our 
 
 - [MVP](#mvp)
 
-   *[Have a RESTful JSON API]
-   *Ruby On Rails Server
-   *Build a database with at least 3 tables
-   *Utilize Rails to define models for interacting with the database.
+   - Have a RESTful JSON API
+   - Ruby On Rails Server
+   - Build a database with at least 3 tables
+   - Utilize Rails to define models for interacting with the database.
    *Implement working generic controller actions for Full CRUD for back-end(index, show, create, update, delete) between your non-User tables
    *Build a React App for front-end
    *Have at least 8 separate, rendered components in an organized and understandable React file structure.
