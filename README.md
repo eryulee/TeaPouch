@@ -1,54 +1,28 @@
 # TeaPouch
 
-- [Overview](#overview)
-At TeaPouch, we provide the best quality  loose leaf organic teas to create our distinctive collection.  Our passion is to elevate the health and happiness of our customers, one cup at a time.
-
-- [MVP](#mvp)
-
-   - Have a RESTful JSON API
-   - Ruby On Rails Server
-   - Build a database with at least 3 tables
-   - Utilize Rails to define models for interacting with the database.
-   *Implement working generic controller actions for Full CRUD for back-end(index, show, create, update, delete) between your non-User tables
-   *Build a React App for front-end
-   *Have at least 8 separate, rendered components in an organized and understandable React file structure.
-   *Use only React for DOM Manipulation.
-   *Consume data from my Ruby on Rails API, and render that data in components.
-   *Utilize React Router, for client-side routing.
-   *Demonstrate full CRUD actions for front-end
-   *Be styled with CSS using Flexbox or Grid.
-   *Implement 2 media queries for responsive design on 3 screen sizes (including desktop).
-   *Deploy the fully functional front-end via Surge or Netlify.
-   *Deploy the back-end via Heroku.
-
-  
-  - [Goals](#goals)
-  - [Libraries and Dependencies](#libraries-and-dependencies)
-  - [Client (Front End)](#client-front-end)
-    - [Wireframes](#wireframes)
-    - [Component Tree](#component-tree)
-    - [Component Architecture](#component-architecture)
-    - [Time Estimates](#time-estimates)
-  - [Server (Back End)](#server-back-end)
-    - [ERD Model](#erd-model)
-- [Post-MVP](#post-mvp)
-- [Code Showcase](#code-showcase)
-- [Code Issues & Resolutions](#code-issues--resolutions)
-
-<br>
 
 ## Overview
 
-_**Project Title** is lorem ipsum dolor sit amet. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
-
+_**TeaPouch** At TeaPouch, we provide the best quality  loose leaf organic teas to create our distinctive collection.  Our passion is to elevate the health and happiness of our customers, one cup at a time.
 
 <br>
 
 ## MVP
-
-> The Minimum Viable Product should be a well-planned, easily-communicated product, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
-
-_The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
+   - Have a RESTful JSON API
+   - Ruby On Rails Server
+   - Build a database with at least 3 tables
+   - Utilize Rails to define models for interacting with the database.
+   - Implement working generic controller actions for Full CRUD for back-end(index, show, create, update, delete) between your non-User tables
+   - Build a React App for front-end
+   - Have at least 8 separate, rendered components in an organized and understandable React file structure.
+   - Use only React for DOM Manipulation.
+   - Consume data from my Ruby on Rails API, and render that data in components.
+   - Utilize React Router, for client-side routing.
+   - Demonstrate full CRUD actions for front-end
+   - Be styled with CSS using Flexbox or Grid.
+   - Implement 2 media queries for responsive design on 3 screen sizes (including desktop).
+   - Deploy the fully functional front-end via Surge or Netlify.
+   - Deploy the back-end via Heroku.
 
 <br>
 
