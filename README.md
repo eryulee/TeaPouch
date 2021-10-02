@@ -84,14 +84,31 @@ https://whimsical.com/VU5cEVsCJn1stLTjUui29v
 ``` structure
 
 src
-|__ assets/
-      |__ fonts
-      |__ graphics
-      |__ images
-      |__ mockups
+
 |__ components/
       |__ Header.jsx
+|__ containers/
+      |__ MainContainer.jsx
+|__ layouts/
+      |__ Layout.jsx
+|__ screens/
+      |__ Flavors.jsx
+      |__ FoodCreate.jsx
+      |__ FoodEdit.jsx
+      |__ Foods.jsx
+      |__ Login.jsx
+      |__ Register.jsx
 |__ services/
+      |__ auth.js
+      |__ config.js
+      |__ flavors.js
+      |__ foods.js
+|__ App.css/
+|__ App.js/
+|__ index.css/
+|__ index.js/
+|__ utils/
+      
 
 ```
 
