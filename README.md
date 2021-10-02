@@ -23,7 +23,7 @@ _**TeaPouch** At TeaPouch, we provide the best quality  loose leaf organic teas 
    - Implement 2 media queries for responsive design on 3 screen sizes (including desktop).
    - Deploy the fully functional front-end via Surge or Netlify.
    - Deploy the back-end via Heroku.
-   - 
+    
 
 <br>
 
@@ -118,9 +118,25 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
+| READme, ERD, component tree hierarchy    |    H     |     6 hrs      |     6 hrs     |    6 hrs    |
+| Wireframes |    H     |     7 hrs      |     7 hrs     |     TBD     |
+| Back-end models and controllers   |    H     |     3 hrs      |     3 hrs     |    3 hrs    |
+| seeds file  |    H    |     1 hr      |     2 hrs     |    2 hrs    |
+| Back-end authorization    |    H     |     4 hrs      |     3 hrs     |    3 hrs    |
+| Full CRUD backend and test in Postman    |    H    |     8 hrs      |     8 hrs     |    3 hrs    |
+| Sign In form   |    L     |     3 hrs      |     3 hrs     |    3 hrs    |
+| Sign Up Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
+| Front-end directory structure setup   |    H     |     3 hrs      |     3 hrs     |    3 hrs    |
+| Layout.jsx   |    H     |     1 hrs      |     2 hrs     |    2 hrs    |
+| Front-end authorization    |    L     |     3 hrs      |     3 hrs     |    3 hrs    |
+| Add Tea Form   |    H     |     3 hrs      |     2 hrs     |    3 hrs    |
+| Edit Tea Form    |    H     |     3 hrs      |     2 hrs     |    3 hrs    |
+| screens    |    H     |     9 hrs      |     7 hrs     |    7 hrs    |
+| services    |    L     |     6 hrs      |     5 hrs     |    5 hrs    |
+| css   |    H     |     12 hrs      |     12 hrs     |    12 hrs    |
+| media queries   |    H    |     3 hrs      |     3 hrs     |    3 hrs    |
 | TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
+
 
 > _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evaluate possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
 
