@@ -23,30 +23,37 @@ _**TeaPouch** At TeaPouch, we provide the best quality  loose leaf organic teas 
    - Implement 2 media queries for responsive design on 3 screen sizes (including desktop).
    - Deploy the fully functional front-end via Surge or Netlify.
    - Deploy the back-end via Heroku.
+   - 
 
 <br>
 
 ### Goals
 
-- _Lorem ipsum, dolor sit amet,_
-- _consectetur adipiscing elit._
-- _Phasellus dapibus fermentum risus vitae bibendum._
-- _Integer vel ipsum mollis odio sollicitudin ornare eu vel ex._
-- _etc._
+- Have wireframes, component hierarchy, ERD ready for project approval by Monday October 4, 2021
+- Have inital CRUD and authentication done for back-end by end of day Monday October 4, 2021 
+- Have full CRUD for front-end done by Tuesday October 5, 2021
+- Have initial css styling done by Wednesday October 6, 2021
+- Have media queries and  advanced CSS styling done by Thursday October 7, 2021
+- Have front-end and back-end deployed, and work on initial PMVP features done by Friday October 8, 2021
+- Work on any debugging over the weekend
+- Ready for Presentations on Monday October 11, 2021
+
 
 <br>
 
 ### Libraries and Dependencies
 
-> Use this section to list all supporting libraries and dependencies, and their role in the project. Below is an example - this needs to be replaced!
+
 
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
-|      React       | _Lorem ipsum dolor sit amet, consectetur._ |
-|   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
-| React SemanticUI | _Lorem ipsum dolor sit amet, consectetur._ |
-|     Express      | _Lorem ipsum dolor sit amet, consectetur._ |
-|  Express Router  | _Lorem ipsum dolor sit amet, consectetur._ |
+|      React       | Render components, utilize state and props, and consume data from Ruby on Rails API |
+|   React Router   | utilized for client-side routing |
+| Ruby on Rails | utilized for building a server, exposing RESTful JSON endpoints |
+|    Rails     | Define models for interacting with the database |
+|  Netlify  | fully functional front-end deployment |
+| Heroku | used to deploy back-end |
+
 
 <br>
 
