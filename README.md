@@ -73,7 +73,9 @@ https://www.figma.com/file/3QbrsD3dU9kFfIWKbXLF6S/TeaPouch?node-id=0%3A1
 
 
 
-[Component Tree Sample](https://gist.git.generalassemb.ly/davidtwhitlatch/414107e2560ae0bb65e233570f2fe056#file-component-tree-png)
+[Component Tree Sample](https://i.imgur.com/V09yg9s.png)
+
+https://whimsical.com/VU5cEVsCJn1stLTjUui29v
 
 #### Component Architecture
 
