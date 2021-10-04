@@ -1,5 +1,6 @@
 class TeasController < ApplicationController
   before_action :set_tea, only: [:show, :update, :destroy]
+  before_action :authorize_request, only: [:create, :update, :destroy]
 
   # GET /teas
   def index
@@ -10,11 +11,12 @@ class TeasController < ApplicationController
 
   # GET /teas/1
   def show
-    render json: @tea
+    render json: @tea, include: :flavor
   end
 
   # POST /teas
   def create
+    @tea.user = @current_user
     @tea = Tea.new(tea_params)
 
     if @tea.save
@@ -38,6 +40,16 @@ class TeasController < ApplicationController
     @tea.destroy
   end
 
+  # adding flavor to tea method goes here
+  def add_flavor_to_tea
+    @tea = Tea.find(params[:id])
+    @flavor = Flavor.find(params[:flavor_id])
+
+    @tea.flavors << @flavor
+
+    render json: @tea, include: :flavors
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_tea
@@ -46,6 +58,6 @@ class TeasController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def tea_params
-      params.require(:tea).permit(:name, :user_id)
+      params.require(:tea).permit(:name)
     end
 end
