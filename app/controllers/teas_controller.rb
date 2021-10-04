@@ -16,8 +16,8 @@ class TeasController < ApplicationController
 
   # POST /teas
   def create
-    @tea.user = @current_user
     @tea = Tea.new(tea_params)
+    @tea.user = @current_user
 
     if @tea.save
       render json: @tea, status: :created, location: @tea
@@ -58,6 +58,6 @@ class TeasController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def tea_params
-      params.require(:tea).permit(:name)
+      params.require(:tea).permit(:name, :price, :description, :image_url, :flavor_id)
     end
 end
