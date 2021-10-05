@@ -41,7 +41,7 @@
 //     };
 
 //   return (
-//     <Layout>
+//     <Layout handleLogout={props.handleLogout}>
 //       <div>
 
 //       <div className='name_logo'>

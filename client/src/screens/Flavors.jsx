@@ -1,8 +1,9 @@
-
+import  Layout  from '../components/layouts/Layout'
+import {Link} from 'react-router-dom'
 
 export default function Flavors(props) {
   return (
-    <Layout>
+    <Layout handleLogout={props.handleLogout}>
       <div>
 
       <div className='name_logo'>

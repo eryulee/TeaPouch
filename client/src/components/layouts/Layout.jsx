@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import './Layout.css'
 import Nav from '../nav/Nav';
 import { useState, useEffect } from 'react';
@@ -6,10 +6,10 @@ import { useHistory } from 'react-router-dom';
 
 
 import {
-  loginUser,
-  registerUser,
+  // loginUser,
+  // registerUser,
   verifyUser,
-  removeToken,
+  // removeToken,
 } from '../../services/auth';
 
 
@@ -17,31 +17,11 @@ function Layout(props) {
   const [currentUser, setCurrentUser] = useState(null);
   const history = useHistory();
 
-  useEffect(() => {
-    const handleVerify = async () => {
-      const userData = await verifyUser();
-      setCurrentUser(userData);
-    };
-    handleVerify();
-  }, []);
+ 
 
-  const handleLogin = async (loginData) => {
-    const userData = await loginUser(loginData);
-    setCurrentUser(userData);
-    history.push('/');
-  };
+  
 
-  const handleRegister = async (registerData) => {
-    const userData = await registerUser(registerData);
-    setCurrentUser(userData);
-    history.push('/');
-  };
-
-  const handleLogout = () => {
-    setCurrentUser(null);
-    localStorage.removeItem('authToken');
-    removeToken();
-  };
+  
   return (
     <div>
      
@@ -67,7 +47,7 @@ function Layout(props) {
       
       <div className='footer'>
         <footer className='footer-nav'>
-          <Nav user={currentUser} handleLogout={handleLogout}  />
+          <Nav user={currentUser} handleLogout={props.handleLogout}  />
         </footer>
       </div>
        

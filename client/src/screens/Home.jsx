@@ -1,11 +1,11 @@
-import { Layout } from '../../components'
+import  Layout  from '../components/layouts/Layout'
 import { Link } from 'react-router-dom'
 import './Home.css'
 
 const Home = (props) => {
 
   return (
-    <Layout currentUser={currentUser}>
+    <Layout currentUser={props.currentUser} handleLogout={props.handleLogout}>
       <div className='home'>
         
       <div className='bckground'>

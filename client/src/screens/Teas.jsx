@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom';
+import Layout from '../components/layouts/Layout'
 
  function Teas(props) {
    return (
-     <Layout>
+     <Layout handleLogout={props.handleLogout}>
        
        <div>
          
