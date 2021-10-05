@@ -63,7 +63,7 @@ export default function Register(props) {
       </label>
       <br />
       
-         <h3> Already a user? Sign up <Link to='/login'>Here!</Link> </h3>
+         <h3> Already a user? Sign In <Link to='/login'>Here!</Link> </h3>
       <button>Sign Up</button>
 
       </form>

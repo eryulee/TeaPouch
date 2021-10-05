@@ -1,6 +1,7 @@
 // import { useState, useEffect } from 'react';
 // import { useParams } from 'react-router-dom';
 // import { getOneTea, addFlavorToTea } from '../services/teas';
+// import {Link} from 'react-router-dom'
 
 // export default function FoodDetail(props) {
 //   const [teaItem, setTeaItem] = useState(null);
@@ -17,7 +18,7 @@
 
 
 //   return (
-//     <Layout>
+    
 //       <div>
 
 //       <div className='name_logo'>
@@ -56,13 +57,13 @@
 //         <button>| EDIT |</button>
 //       </Link>
           
-//           <button onClick={() => props.handleFoodDelete(food.id)}>
+//           <button onClick={() => props.handleTeaDelete(tea.id)}>
 //             | DELETE |
 //           </button>
 //    </div>
             
 
 //       </div>
-//       </Layout>
+      
 //   );
 // }

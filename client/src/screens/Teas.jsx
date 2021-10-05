@@ -3,7 +3,7 @@ import Layout from '../components/layouts/Layout'
 
  function Teas(props) {
    return (
-     <Layout handleLogout={props.handleLogout}>
+    
        
        <div>
          
@@ -36,7 +36,7 @@ import Layout from '../components/layouts/Layout'
       </Link>
 
     </div>
-    </Layout>
+  
   );
 }
 

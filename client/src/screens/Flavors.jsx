@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 
 export default function Flavors(props) {
   return (
-    <Layout handleLogout={props.handleLogout}>
+    
       <div>
 
       <div className='name_logo'>
@@ -26,6 +26,6 @@ export default function Flavors(props) {
     </div>
 
     </div>
-    </Layout>
+   
   )
 }

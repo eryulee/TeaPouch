@@ -12,7 +12,7 @@ import Login from './screens/Login';
 import Register from './screens/Register';
 import { verifyUser, loginUser, registerUser, removeToken } from './services/auth';
 import Home from './screens/Home.jsx'
-
+import Layout from './components/layouts/Layout'
 
 
 
@@ -77,7 +77,7 @@ function App() {
 
   const handleRedirect = () => {
     history.push('/sign-in')
-    alert('Please sign in first')
+    // alert('Please sign in first')
   }
 
   const handleLogin = async (loginData) => {
@@ -103,35 +103,39 @@ function App() {
       
 
 
-      <Switch>
+      {/* <Switch> */}
+        <Layout currentUser={currentUser} handleLogout={handleLogout}>
+          <Route path='/' exact>
+          <Home />
+          </Route>
           <Route path='/flavors'>
-          <Flavors flavors={flavors} handleLogout={handleLogout} handleVerify={handleVerify} currentUser={currentUser}/>
+          <Flavors flavors={flavors} />
         </Route>
         <Route path='/teas/:id/edit'>
-          {currentUser ? <TeaEdit teas={teas} handleTeaUpdate={handleTeaUpdate} handleLogout={handleLogout} /> : handleRedirect}
+           <TeaEdit teas={teas} handleTeaUpdate={handleTeaUpdate}  /> 
         </Route>
         <Route path='/teas/:id'>
           <TeaDetail flavors={flavors} currentUser={currentUser}
             handleRedirect={handleRedirect}/>
         </Route>
         <Route path='/teas/new'>
-          {currentUser ? <TeaCreate handleTeaCreate={handleTeaCreate} handleLogout={handleLogout} /> : handleRedirect}
+         <TeaCreate handleTeaCreate={handleTeaCreate} currentUser={currentUser} /> 
         </Route>
         
       <Route path='/teas'>
-        <Teas teas={teas} handleTeaDelete={handleTeaDelete} handleLogout={handleLogout} />
+        <Teas teas={teas} handleTeaDelete={handleTeaDelete} />
       </Route>
-        
+
+        </Layout>
+
+
           <Route path='/login'>
             <Login handleLogin={handleLogin} />
           </Route>
           <Route path='/register'>
             <Register handleRegister={handleRegister} />
           </Route>
-          <Route path='/'>
-          <Home currentUser={currentUser} handleLogout={handleLogout}/>
-          </Route>
-        </Switch>
+        {/* </Switch> */}
         
      
     </div>

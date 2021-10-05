@@ -1,0 +1,25 @@
+#holding-tea {
+  width: 100%;
+  height: 40%;
+  opacity: 85%;
+}
+
+#pouch {
+  width: 155px;
+  height: 55px;
+}
+
+#organic {
+  width: 75px;
+  height: 55px;
+}
+
+#mood {
+  width: 75px;
+  height: 55px;
+}
+
+.home {
+  background-color: #f6f7f5;
+}
+

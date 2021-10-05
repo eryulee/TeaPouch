@@ -41,7 +41,7 @@
 //     };
 
 //   return (
-//     <Layout handleLogout={props.handleLogout}>
+//    
 //       <div>
 
 //       <div className='name_logo'>
@@ -126,6 +126,17 @@
 //       <button>Submit</button>
 //       </form>
 //       </div>
-//       </Layout>
+//      
 //   );
 // }
+
+
+function TeaCreate(props) {
+  if (props.currentUser) {
+    return <p>'Hello world!'</p>
+  } else {
+    return <p>'not logged in!'</p>
+  }
+}
+
+export default TeaCreate
