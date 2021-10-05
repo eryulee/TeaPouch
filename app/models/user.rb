@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  has_many :teas 
+  has_many :teas, dependent: :destroy
   has_secure_password
 
   validates :username, presence: true, uniqueness: true
