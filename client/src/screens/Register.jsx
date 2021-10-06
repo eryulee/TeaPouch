@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import './Register.css'
 
 export default function Register(props) {
   const [formData, setFormData] = useState({
@@ -18,11 +19,14 @@ export default function Register(props) {
 
   return (
     <>
-      <div className='name_logo'>
+      <div className='login_logo'>
         <img src='https://i.imgur.com/khYD43E.png'
           alt='pouch'
-        id='pouch' />
-      <h3>Tea Pouch</h3>
+        id='login-pouch' />
+      </div>
+
+      <div className='teap'>
+      <h3 className='tp'>TeaPouch</h3>
       </div>
 
     <form
@@ -31,40 +35,43 @@ export default function Register(props) {
         props.handleRegister(formData);
       }}
     >
-      <h3>Register</h3>
-      <label>
-        Username:
-        <input
-          type='text'
-          name='username'
-          value={formData.username}
-          onChange={handleChange}
-        />
-      </label>
+      
+      <label className='lg-label'>
+            
+            <input className='username'
+              type='text'
+              name='username'
+              value={formData.username}
+             onChange={handleChange}
+              placeholder='Username...'
+            />
+          </label>
       <br />
       <label>
-        Email:
-        <input
+        
+        <input className='email'
           type='text'
           name='email'
           value={formData.email}
-          onChange={handleChange}
+            onChange={handleChange}
+            placeholder='Email...'
         />
       </label>
       <br />
       <label>
-        Password:
-        <input
+       
+       <input className='password'
           type='password'
           name='password'
           value={formData.password}
           onChange={handleChange}
+          placeholder='Password..'
         />
       </label>
       <br />
       
-         <h3> Already a user? Sign In <Link to='/login'>Here!</Link> </h3>
-      <button>Sign Up</button>
+         <h3 className='lg-text'> Already a user? Sign In <Link to='/login'>Here!</Link> </h3>
+      <button className='signin'>Sign Up</button>
 
       </form>
 

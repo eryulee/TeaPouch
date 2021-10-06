@@ -82,3 +82,52 @@
     border:  none;
   }
 
+  @media only screen and (min-width: 768px) {
+    .username {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      
+      width: 40%;
+    }
+    .password {
+      width: 40%;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      margin-bottom: 30px;
+    }
+
+    .signin {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-right: 25px;
+      padding-left: 25px;
+      font-size: 15px;
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    .username {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      
+      width: 33%;
+    }
+    .password {
+      width: 33%;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      margin-bottom: 30px;
+    }
+
+    .signin {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-right: 25px;
+      padding-left: 25px;
+      font-size: 15px;
+    }
+
+    #tealeaves {
+      height: 200px;
+    }
+  }
