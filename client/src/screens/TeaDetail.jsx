@@ -52,7 +52,7 @@ export default function FoodDetail(props) {
               <button>| EDIT |</button>
             </Link>
 
-            <button onClick={() => props.handleTeaDelete(teaItem.id)}>
+          <button onClick={() => { props.handleTeaDelete(teaItem.id) }}>
               | DELETE |
             </button>
           </div>

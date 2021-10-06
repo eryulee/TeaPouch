@@ -66,6 +66,7 @@ function App() {
   const handleTeaDelete = async (id) => {
     await deleteTea(id);
     setTeas((prevState) => prevState.filter((teaItem) => teaItem.id !== id));
+    history.push("/teas");
   };
 
   const handleTeaUpdate = async (id, teaData) => {
@@ -141,13 +142,14 @@ function App() {
             flavors={flavors}
             currentUser={currentUser}
             handleRedirect={handleRedirect}
+            handleTeaDelete={handleTeaDelete}
           />
           </Layout>
         </Route>
 
         <Route path="/teas">
           <Layout currentUser={currentUser} handleLogout={handleLogout}>
-            <Teas teas={teas} handleTeaDelete={handleTeaDelete} />
+            <Teas teas={teas}  />
           </Layout>
         </Route>
 
