@@ -28,7 +28,7 @@ function Layout(props) {
       <div className='header'>
       <header className='user-greeting'>
         {props.currentUser !== null ?
-            <p>`Hello, ${props.currentUser.username}!`</p>  : <p>not logged in </p>}
+            <p className='message1'>Welcome, {props.currentUser.username}!</p>  : <p> </p>}
         </header>
       </div>
         

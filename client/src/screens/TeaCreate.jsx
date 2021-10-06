@@ -1,146 +1,68 @@
-// import { useState } from 'react'
-// import { useParams } from 'react-router-dom';
-// import { getOneTea, addFlavorToTea } from '../services/teas';
+import React from "react";
+import { useState } from "react";
 
-// export default function TeaCreate(props) {
-//   const [teaItem, setTeaItem] = useState(null);
-//   const [selectedFlavor, setSelectedFlavor] = useState('');
-//   const { id } = useParams();
-//   const { flavors } = props;
-//   const [formData, setFormData] = useState({
-//     name: ''
-//   })
+export default function TeaCreate(props) {
+  const [formData, setFormData] = useState({
+    name: "",
+    price: "",
+    description: "",
+    image_url: "",
+    flavor_id: "",
+  });
 
-//   useEffect(() => {
-//     const fetchTeaItem = async () => {
-//       const teaData = await getOneTea(id);
-//       setTeaItem(teaData);
-//     };
-//     fetchTeaItem();
-//   }, [id]);
-
-//   const handleChange = (e) => {
-//     const { value } = e.target;
-//     setSelectedFlavor(value);
-//   };
-
-//   const handleSubmit = async (e) => {
-//     e.preventDefault();
-//     const teaItem = await addFlavorToTea(selectedFlavor, id);
-//     setTeaItem(teaItem);
-//   };
-
-
-//     const handleChange = (e) => {
-//       const { name, value } = e.target;
-      
-//       setFormData((prevState) => ({
-//         ...prevState,
-//         [name]: value,
-//       }));
-//     };
-
-//   return (
-//    
-//       <div>
-
-//       <div className='name_logo'>
-//         <img src='https://i.imgur.com/khYD43E.png'
-//           alt='pouch'
-//         id='pouch' />
-//       <h3>Tea Pouch</h3>
-//       </div>
-      
-//       <div className='page-title'>
-//         <h3 className='add-pg-title'> --ADD A TEA-- </h3>
-//         </div>
-
-//       <div className='add-img'>
-//         <img src='https://i.imgur.com/5FuXSlI.jpg?2'
-//           alt='add-screen-img'
-//         id='add-screen-img' />
-//       </div>
-      
-//     <form onSubmit={(e)=> {
-//       e.preventDefault()
-//       props.handleTeaCreate(formData);
-//     }}>
+  const handleChange = (e) => {
+    const { name, value } = e.target;
     
-//       <label>
-//         Name:
-//         <input
-//           type='text'
-//           name='name'
-//           value={formData.name}
-//           onChange={handleChange}
-//           />
-//           Price:
-//           <input
-//           type='integer'
-//           name='price'
-//           value={formData.price}
-//           onChange={handleChange}
-//           />
-//           Description:
-//           <input
-//           type='text'
-//           name='description'
-//           value={formData.description}
-//           onChange={handleChange}
-//           />
-//           Image url:
-//           <input
-//           type='text'
-//           name='Image url'
-//           value={formData.image_url}
-//           onChange={handleChange}
-//           />
-// <div className='flavor-form'>
-// <h3>{teaItem?.name}</h3>
-//       {teaItem?.flavors.map((flavor) => (
-//         <p key={flavor.id}>{flavor.name}</p>
-//       ))}
 
-//           {/* below is our for for the flavor drop down */}
-//         <form onSubmit={handleSubmit}>
-          
-//           <select onChange={handleChange} defaultValue='default'>
-          
-//             <option disabled value='default'>
-//               -- Select a Flavor --
-//             </option>
-            
-  
-//             {flavors.map((flavor) => (
-              
-//               <option value={flavor.id}>{flavor.name}</option>
-//             ))}
-//           </select>
-//           <button>Add</button>
-//         </form>
-//         </div>
+    setFormData((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
+  };
 
-          
-//       </label>
-//       <br/>
-//       <button>Submit</button>
-//       </form>
-//       </div>
-//      
-//   );
-// }
-
-
-function TeaCreate(props) {
-  let test;
-  if (props.currentUser !== null) {
-    test = 'You are signed in!'
-  } else {
-    test = 'null'
-  }
   return (
-    <p>{test}</p>
- )
-}
+    <form onSubmit={(e) => {
+      e.preventDefault()
+      props.handleTeaCreate(formData)
+    }}>
+      <h1>TeaPouch</h1>
+      <h3>Create Tea </h3>
+      <hr />
+      <input
+        onChange={handleChange}
+        value={formData.name}
+        name="name"
+        type="text"
+      />
+      <input
+        onChange={handleChange}
+        value={formData.price}
+        name="price"
+        type="number"
+      />
 
-export default TeaCreate
+      <input
+        onChange={handleChange}
+        value={formData.description}
+        name="description"
+        type="text"
+      />
+      <input
+        onChange={handleChange}
+        value={formData.image_url}
+        name="image_url"
+        type="text"
+      />
+      <select name='flavor_id' onChange={handleChange} defaultValue='default'>
+        <option disabled value='default'>
+          -- Select a Flavor --
+        </option>
+        {props.flavors.map((flavor) => (
+          <option value={flavor.id}>{flavor.name}</option>
+        ))}
+        </select>
+      <button>Submit</button>
+      <hr />
+    </form>
+  );
+}

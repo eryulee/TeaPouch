@@ -35,7 +35,8 @@ import Layout from '../components/layouts/Layout'
         <button>Add Tea</button>
       </Link>
 
-    </div>
+      <hr />
+     </div>
   
   );
 }

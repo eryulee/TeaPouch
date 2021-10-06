@@ -9,7 +9,7 @@ const Nav = (props) => {
     <>
       
       
-        <button onClick={props.handleLogout}>
+        <button  className='lgbtn' onClick={props.handleLogout}>
               <img src='https://i.imgur.com/uJIaTiH.png'
               alt='logout-btn'
               id='logout-btn' />
@@ -40,7 +40,7 @@ const Nav = (props) => {
   const alwaysOptions = (
     <>
       <NavLink className='link' to='/teas'>
-      <img src='https://i.imgur.com/HgbgkCI.png'
+      <img src='https://i.imgur.com/XqUpwZB.png'
               alt='tea-nav'
             id='tea-nav' />
       </NavLink>

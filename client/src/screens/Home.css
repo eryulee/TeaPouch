@@ -11,41 +11,52 @@
   height: 65px;
   filter: invert(1);
   margin-bottom: 0;
+  padding-bottom: 0;
+  padding-top: 5px;
+ 
 }
 
 #organic {
-  width: 75px;
-  height: 55px;
+  width: 65px;
+  height: 45px;
   filter: opacity(40%);
   margin-top: 50px;
 }
 
 #mood {
-  width: 75px;
-  height: 55px;
+  width: 65px;
+  height: 45px;
   
 }
 .collection {
   background-image: url('https://i.imgur.com/cyCwBAJ.jpg');
   background-size: cover;
   height: 300px;
-  filter: opacity(85%);
+  filter: opacity(95%);
+  padding-bottom: 50px;
 }
 
 .tea-browse-link {
   margin-top: 12px;
   padding-bottom: 10px;
   padding-top: 10px;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
   border-radius: 5px;
   letter-spacing: 4px;
+  color: #ffffff;
+    background-color: #92b188;
+    letter-spacing: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    border:  none;
 }
 
 .home-name {
   color: #ffffff;
   font-size: 30px;
   font-weight: 350;
+  letter-spacing: 8px;
 }
 
 
@@ -58,7 +69,7 @@
 }
 
 .name_logo {
-  height: 400px;
+  height: 500px;
 }
 
 .mission-statement {
@@ -67,8 +78,27 @@
   letter-spacing: 2px;
   margin-left: 10%;
   margin-right: 10%;
+  padding-top: 0px;
 }
 
 h3.home-name {
   margin-top: 0;
+}
+
+.orgnic {
+  color: #7d7f7c;
+  font-weight: 500;
+  margin-top: 5px;
+  letter-spacing: 5px;
+  font-size: 15px;
+  margin-bottom: 50px;
+}
+
+.mb {
+  color: #7d7f7c;
+  margin-top: 5px;
+  font-weight: 500;
+  letter-spacing: 5px;
+  font-size: 15px;
+  margin-bottom: 50px;
 }

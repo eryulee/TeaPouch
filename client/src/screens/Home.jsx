@@ -16,7 +16,7 @@ function Home (props) {
         <img src='https://i.imgur.com/khYD43E.png'
           alt='pouch'
         id='pouch' />
-            <h3 className='home-name'>Tea Pouch</h3>
+            <h3 className='home-name'>TeaPouch</h3>
             <h4 className='mission-statement'>
             At TeaPouch, we provide the best quality  loose leaf organic teas to create our distinctive collection.  Our passion is to elevate the health and happiness of our customers, one cup at a time.
           </h4>
@@ -35,12 +35,12 @@ function Home (props) {
           alt='organic'
           id='organic'
         />
-        <h4>ORGANIC</h4>
+        <h4 className='orgnic'>ORGANIC</h4>
         
         <img src='https://i.imgur.com/FMdmhYj.png'
           alt='mood'
           id='mood' />
-        <h4>MOOD BOOSTER</h4>
+        <h4 className='mb'>MOOD BOOSTER</h4>
       </div>
 
         

@@ -20,7 +20,7 @@ class TeasController < ApplicationController
     @tea.user = @current_user
 
     if @tea.save
-      render json: @tea, status: :created, location: @tea
+      render json: @tea, status: :created
     else
       render json: @tea.errors, status: :unprocessable_entity
     end
