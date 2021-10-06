@@ -23,7 +23,7 @@ import Layout from '../components/layouts/Layout'
         <div key={tea.id}>
           <Link to={`/teas/${tea.id}`}>
             <div className= 'tea-card'>
-            {tea.image_url}
+           <img src={tea.image_url} />
             <p>{tea.name}</p>
             </div>
           </Link>

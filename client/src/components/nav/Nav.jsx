@@ -7,14 +7,14 @@ import React from 'react';
 const Nav = (props) => {
   const authenticatedOptions = (
     <>
-      <NavLink className="link" to='/sign-out'>
+      
       
         <button onClick={props.handleLogout}>
               <img src='https://i.imgur.com/uJIaTiH.png'
               alt='logout-btn'
               id='logout-btn' />
             </button>
-      </NavLink>
+    
       </>
   )
   const unauthenticatedOptions = (
@@ -59,7 +59,7 @@ const Nav = (props) => {
         <div className='links'>
           {/* {user && <div className='greeting'>Welcome, {user.username}</div>} */}
           {alwaysOptions}
-          {props.currentUser ? authenticatedOptions : unauthenticatedOptions}
+          {props.currentUser  ? authenticatedOptions : unauthenticatedOptions}
           </div>
       </div>
     </nav>

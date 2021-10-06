@@ -1,0 +1,28 @@
+#tea-nav {
+  width: 35px;
+  height: 40px;
+  filter: opacity(50%);
+  margin-right: 100px;
+
+}
+
+#home-btn {
+  width: 40px;
+  height: 40px;
+ filter: opacity(30%);
+ margin-right: 100px;
+}
+
+#login-icon {
+  width: 35px;
+  height: 40px;
+  filter: opacity(20%);
+  
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

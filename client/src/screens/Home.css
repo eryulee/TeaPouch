@@ -1,25 +1,74 @@
-#holding-tea {
+/* #holding-tea {
   width: 100%;
-  height: 40%;
+  height: 400px;
   opacity: 85%;
-}
+  position: absolute;
+  object-fit: cover;
+} */
 
 #pouch {
   width: 155px;
-  height: 55px;
+  height: 65px;
+  filter: invert(1);
+  margin-bottom: 0;
 }
 
 #organic {
   width: 75px;
   height: 55px;
+  filter: opacity(40%);
+  margin-top: 50px;
 }
 
 #mood {
   width: 75px;
   height: 55px;
+  
+}
+.collection {
+  background-image: url('https://i.imgur.com/cyCwBAJ.jpg');
+  background-size: cover;
+  height: 300px;
+  filter: opacity(85%);
 }
 
+.tea-browse-link {
+  margin-top: 12px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-radius: 5px;
+  letter-spacing: 4px;
+}
+
+.home-name {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 350;
+}
+
+
+
+/* .app-name {
+  color: #ffffff;
+} */
 .home {
   background-color: #f6f7f5;
 }
 
+.name_logo {
+  height: 400px;
+}
+
+.mission-statement {
+  color: #ffffff;
+  font-weight: 330;
+  letter-spacing: 2px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+h3.home-name {
+  margin-top: 0;
+}

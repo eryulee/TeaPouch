@@ -103,39 +103,50 @@ function App() {
       
 
 
-      {/* <Switch> */}
+  {/* </Layout> */}
+        <Route path='/login'>
+          <Login handleLogin={handleLogin} />
+        </Route>
+        <Route path='/register'>
+          <Register handleRegister={handleRegister} />
+        </Route>
+
+      <Switch>
+      
+        <Route path='/' exact>
         <Layout currentUser={currentUser} handleLogout={handleLogout}>
-          <Route path='/' exact>
-          <Home />
-          </Route>
-          <Route path='/flavors'>
+          <Home  />
+          </Layout>
+        </Route>
+        
+        <Route path='/flavors'>
+        <Layout currentUser={currentUser} handleLogout={handleLogout}>
           <Flavors flavors={flavors} />
+          </Layout>
         </Route>
-        <Route path='/teas/:id/edit'>
+        {/* <Route path='/teas/:id/edit'>
            <TeaEdit teas={teas} handleTeaUpdate={handleTeaUpdate}  /> 
-        </Route>
+        </Route> */}
         <Route path='/teas/:id'>
           <TeaDetail flavors={flavors} currentUser={currentUser}
             handleRedirect={handleRedirect}/>
         </Route>
         <Route path='/teas/new'>
+        <Layout currentUser={currentUser} handleLogout={handleLogout}>
          <TeaCreate handleTeaCreate={handleTeaCreate} currentUser={currentUser} /> 
+         </Layout>
         </Route>
         
-      <Route path='/teas'>
+        <Route path='/teas'>
+        <Layout currentUser={currentUser} handleLogout={handleLogout}>
         <Teas teas={teas} handleTeaDelete={handleTeaDelete} />
+        </Layout>
       </Route>
 
-        </Layout>
+        {/* </Layout> */}
+        </Switch>
 
 
-          <Route path='/login'>
-            <Login handleLogin={handleLogin} />
-          </Route>
-          <Route path='/register'>
-            <Register handleRegister={handleRegister} />
-          </Route>
-        {/* </Switch> */}
         
      
     </div>

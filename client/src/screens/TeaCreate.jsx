@@ -132,11 +132,15 @@
 
 
 function TeaCreate(props) {
-  if (props.currentUser) {
-    return <p>'Hello world!'</p>
+  let test;
+  if (props.currentUser !== null) {
+    test = 'You are signed in!'
   } else {
-    return <p>'not logged in!'</p>
+    test = 'null'
   }
+  return (
+    <p>{test}</p>
+ )
 }
 
 export default TeaCreate

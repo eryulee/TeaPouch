@@ -14,7 +14,7 @@ import {
 
 
 function Layout(props) {
-  const [currentUser, setCurrentUser] = useState(null);
+  // const [currentUser, setCurrentUser] = useState(null);
   const history = useHistory();
 
  
@@ -27,8 +27,8 @@ function Layout(props) {
      
       <div className='header'>
       <header className='user-greeting'>
-        {currentUser ?
-            <p>`Hello, ${currentUser.username}!`</p>  : <p>not logged in </p>}
+        {props.currentUser !== null ?
+            <p>`Hello, ${props.currentUser.username}!`</p>  : <p>not logged in </p>}
         </header>
       </div>
         
@@ -47,7 +47,7 @@ function Layout(props) {
       
       <div className='footer'>
         <footer className='footer-nav'>
-          <Nav user={currentUser} handleLogout={props.handleLogout}  />
+          <Nav currentUser={props.currentUser} handleLogout={props.handleLogout}  />
         </footer>
       </div>
        
