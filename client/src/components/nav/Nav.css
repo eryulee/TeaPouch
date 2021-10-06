@@ -39,3 +39,22 @@
   padding-bottom: 10px;
 }
 
+@media only screen and (min-width: 768px) {
+  #tea-nav {
+    margin-right: 120px;
+  }
+
+  #home-btn {
+    margin-right: 120px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #tea-nav {
+    margin-right: 190px;
+  }
+
+  #home-btn {
+    margin-right: 190px;
+  }
+}

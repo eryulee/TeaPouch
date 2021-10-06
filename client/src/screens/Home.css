@@ -32,7 +32,7 @@
   background-image: url('https://i.imgur.com/cyCwBAJ.jpg');
   background-size: cover;
   height: 300px;
-  filter: opacity(95%);
+  filter: opacity(90%);
   padding-bottom: 50px;
 }
 
@@ -101,4 +101,47 @@ h3.home-name {
   letter-spacing: 5px;
   font-size: 15px;
   margin-bottom: 50px;
+}
+
+.line {
+  color: #7d7f7c;
+}
+
+@media only screen and (max-width: 376px) {
+  .mission-statement {
+    margin-bottom: 5px;
+  }
+
+  .home-name {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .mission-statement {
+    margin-bottom: 15px;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  .home-name {
+    margin-bottom: 0;
+    letter-spacing: 15px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .mission-statement {
+    margin-bottom: 15px;
+    margin-left: 22%;
+    margin-right: 22%;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+  }
+
+  .home-name {
+    margin-bottom: 20px;
+    letter-spacing: 25px;
+  }
+
 }

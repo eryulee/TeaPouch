@@ -45,7 +45,7 @@ function Home (props) {
 
         
         
-      <hr />
+      <hr className='line' />
 
 
       </div>
