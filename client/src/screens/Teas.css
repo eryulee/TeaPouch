@@ -1,0 +1,54 @@
+.tea-div {
+  /* border: 2px solid #d3d3d3; */
+  /* width: 30%; */
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+  align-content: space-around;
+  margin: 15px;
+  width: 14rem;
+  /* border-radius: 5px; */
+
+}
+
+
+.listing-tea-div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+
+}
+
+.tea-div img {
+  width:  100%;
+  color: #000000;
+  background-color: #000000;
+  /* width: 18rem; */
+  
+}
+
+.div.card-container.card {
+  height: 100px;
+}
+
+.card-name {
+  color: #ffffff;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.tea-div:hover {
+  transform: scale(0.9);
+  transition-duration: 0.5s;
+}
+

@@ -38,21 +38,21 @@ puts "#{Flavor.count} flavors created"
   Tea.create!(name: 'Jade Oolong',
   price: 26,
   description: 'Reflecting our internal belief that oolongs should be of lower fermentation (greener), this oolong undergoes a short fermentation to refine the flavour and orchid character. Grown at 800 m elevation,  which facilitates concentration of flavour.',
-  image_url: 'https://i.imgur.com/hehrkQo.jpg',
+  image_url: 'https://i.imgur.com/bGiBXpV.png',
   flavor: @nutty,
   user: @admin)
 
   Tea.create!(name: 'White Tea',
   price: 32,
   description: ' A true luxury, considered by connoisseurs to be one of the most famous white teas, White Blossom tea combines an array of flavors for a rich finish. ',
-  image_url: 'https://i.imgur.com/P531HSF.jpg',
+  image_url: 'https://i.imgur.com/MaPmwu5.png',
   flavor: @floral,
   user: @admin)
 
   Tea.create!(name: 'Matcha',
   price: 27,
   description: 'Organic Japanese Matcha green tea powder from Shizuoka, Japan. Young first flush green leaves are picked and quickly steamed to seal in the goodness before processing .',
-  image_url: 'https://i.imgur.com/e9KvEs4.jpg',
+  image_url: 'https://i.imgur.com/zbZrUJL.png',
   flavor: @savoury,
   user: @admin)
 
@@ -73,7 +73,7 @@ puts "#{Flavor.count} flavors created"
   Tea.create!(name: 'Roobios Tea',
   price: 21,
   description: 'Traditionally drunk by the regions Khoi peoples, the infusion tastes like black tea yet has no caffeine, is low in tannin, and is packed with vitamins, minerals, and antioxidants.',
-  image_url: 'https://i.imgur.com/twekpkM.jpg',
+  image_url: 'https://i.imgur.com/kaHRMqZ.png?1',
   flavor: @spicy,
   user: @admin)
 
@@ -87,7 +87,7 @@ puts "#{Flavor.count} flavors created"
   Tea.create!(name: 'Chrysanthemum Tea',
   price: 19.50,
   description: 'Chrysanthemum flowers have long since been part of Chinese culture. The flowers are dried, and when infused create a bold, sweet, and tangy cup. These particular flowers are grown wild in the Chinese countryside.',
-  image_url: 'https://i.imgur.com/biml694.jpg',
+  image_url: 'https://i.imgur.com/r9sRidF.png',
   flavor: @vegetal,
   user: @admin)
 
