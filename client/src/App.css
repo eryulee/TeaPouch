@@ -1,3 +1,13 @@
 .App {
   background-color: #f6f7f5;
 }
+
+.mega-grid{
+ 
+  display: grid;
+  grid-template-rows: 100px 600px;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+  'N'
+  'C'
+  }

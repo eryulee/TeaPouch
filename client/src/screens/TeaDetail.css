@@ -1,0 +1,29 @@
+.main-detail {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#detailpic {
+  height: 60vh;
+}
+
+.full-tea {
+  display: flex;
+  flex-direction: row;
+}
+
+.main-detail-content {
+  display: flex;
+  flex-direction: column;
+}
+.exclude-image {
+  display: flex;
+  flex-direction: column;
+}
+
+/* .edit-delete-btns {
+  display: flex;
+  flex-direction: row;
+
+} */

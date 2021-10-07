@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import './TeaEdit.css'
 
 export default function TeaEdit(props) {
   const [formData, setFormData] = useState({
@@ -37,6 +38,7 @@ export default function TeaEdit(props) {
   };
 
   return (
+    <div className='create-form-content-container'>
     <div className="addscreen">
       <form
         onSubmit={(e) => {
@@ -57,7 +59,7 @@ export default function TeaEdit(props) {
         </div>
 
         <div className="screen-links">
-          <h3 className="tea-link">-- EDIT Tea --</h3>
+          <h3 className="tea-link">-- Edit Tea --</h3>
         </div>
 
         <div className="add-img">
@@ -74,6 +76,8 @@ export default function TeaEdit(props) {
 
         <br />
 
+
+        <div className='edit-input-container'>
         <input
           className="addinput"
           onChange={handleChange}
@@ -109,18 +113,20 @@ export default function TeaEdit(props) {
           name="flavor_id"
           onChange={handleChange}
           defaultValue="default"
-        >
+          >
           <option disabled value="default">
             -- Select a Flavor --
           </option>
           {props.flavors.map((flavor) => (
             <option value={flavor.id}>{flavor.name}</option>
-          ))}
+            ))}
         </select>
         <br />
         <button className="signin3">Submit</button>
         <hr />
-      </form>
+        </div>    
+        </form>
+        </div>
     </div>
   );
 }

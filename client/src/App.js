@@ -104,7 +104,8 @@ function App() {
 
   return (
     <div className="App">
-      {/* </Layout> */}
+      {/* <div className='mega-grid'> */}
+     
       <Route path="/login">
         <Login handleLogin={handleLogin} />
       </Route>
@@ -152,13 +153,14 @@ function App() {
 
         <Route path="/teas">
           <Layout currentUser={currentUser} handleLogout={handleLogout}>
-            <Teas teas={teas}  />
+            <Teas currentUser={currentUser} teas={teas}  />
           </Layout>
         </Route>
 
         {/* </Layout> */}
       </Switch>
-    </div>
+      </div>
+    // </div>
   );
 }
 

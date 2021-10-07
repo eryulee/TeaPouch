@@ -60,9 +60,11 @@ function Teas(props) {
       </div>
       
       
-      <Link to="/teas/new">
-        <button className='signin2'>Add Tea</button>
-      </Link>
+      {props.currentUser && 
+        <Link to="/teas/new">
+          <button className='signin2'>Add Tea</button>
+        </Link> 
+        }
 
       <hr />
         
