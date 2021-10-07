@@ -5,18 +5,23 @@ import "./Teas.css";
 
 function Teas(props) {
   return (
-    <div>
-      <div className="name_logo">
-        <img src="https://i.imgur.com/khYD43E.png" alt="pouch" id="pouch" />
-        <h3>Tea Pouch</h3>
+    <div className='bbody'>
+      <div className='login_logo1'>
+        <img src='https://i.imgur.com/khYD43E.png'
+          alt='pouch'
+        id='login-pouch1' />
+      </div>
+
+      <div className='teap1'>
+      <h3 className='tp1'>TeaPouch</h3>
       </div>
 
       <div className="screen-links">
         <Link className="tea-link" to="/teas">
-          OUR TEAS
+          |OUR TEAS|
         </Link>
         <Link className="flavors-link" to="/flavors">
-          FLAVOR GUIDE
+          |FLAVOR GUIDE|
         </Link>
       </div>
 
@@ -56,7 +61,7 @@ function Teas(props) {
       
       
       <Link to="/teas/new">
-        <button>Add Tea</button>
+        <button className='signin2'>Add Tea</button>
       </Link>
 
       <hr />
