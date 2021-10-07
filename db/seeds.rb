@@ -31,7 +31,7 @@ puts "#{Flavor.count} flavors created"
   Tea.create!(name: 'LongJing Green Tea',
    price: 20.49, 
    description: 'This tea has an impeccable balance between green character and the nori-like composition found in Japanese Sencha teas. It is typically harvested several days before Qingming when the new twigs have just begun to grow',
-   image_url: 'https://i.imgur.com/9NdiPOd.png',
+   image_url: 'https://i.imgur.com/f0EyfOp.png',
    flavor: @earthy,
    user: @admin)
 
