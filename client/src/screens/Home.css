@@ -55,7 +55,7 @@
 .home-name {
   color: #ffffff;
   font-size: 30px;
-  font-weight: 350;
+  font-weight: 340;
   letter-spacing: 8px;
 }
 
@@ -115,6 +115,8 @@ h3.home-name {
 
   .home-name {
     margin-bottom: 0;
+    margin-top: 0;
+    
   }
 }
 

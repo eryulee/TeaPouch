@@ -34,7 +34,7 @@ export default function FoodDetail(props) {
 
       <div className="screen-links">
         <h3 className="tea-link1">
-          - Tea Detail -
+          | TEA DETAIL |
         </h3>
         <hr />
         </div>
@@ -50,9 +50,12 @@ export default function FoodDetail(props) {
           
         <div className='exclude-image'>
           <div className="teaItem-details">
-            <p>{teaItem.name}</p>
-            <p>${teaItem.price}</p>
-            <p>{teaItem.description}</p>
+              <p>{teaItem.name}</p>
+              <p>------------</p>
+              <p>${teaItem.price}</p>
+              <p>-------</p>
+              <p>{teaItem.description}</p>
+              <p>------------</p>
             <p>notes: {teaItem.flavor.name}</p>
           </div>
           {/* <br /> */}

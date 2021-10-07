@@ -169,6 +169,12 @@
       width: 153px;
       height: 11rem;
     }
+
+    .tp1 {
+      font-size: 20px;
+    font-weight: 390;
+    letter-spacing: 9px;
+    }
   }
 
   @media only screen and (max-width: 769px) {

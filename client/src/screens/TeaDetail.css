@@ -7,12 +7,24 @@
 }
 
 #detailpic {
-  height: 60vh;
+  height: 40vh;
+  position: relative;
+  left: -210%;
+  margin-bottom: 150px;
+}
+
+.detail-img {
+  height: 200px;
+  width: 70px;
+  padding-bottom: 100px;
 }
 
 .full-tea {
-  display: flex;
-  flex-direction: row;
+  /* display: flex;
+  flex-direction: row; */
+  display: grid;
+  grid-template-columns: 35% 50%;
+ 
 }
 
 .main-detail-content {
@@ -22,10 +34,12 @@
 .exclude-image {
   display: flex;
   flex-direction: column;
+  margin-bottom: 70px;
 }
 
 .teaItem-details {
   color: #ffffff;
+  font-size: 13px;
 }
 
 .tea-link1 {
@@ -34,8 +48,8 @@
   margin-bottom: 40px;
   color: #ffffff;
   font-weight: 340;
-  letter-spacing: 6px;
-  font-size: 17px;
+  letter-spacing: 3px;
+  font-size: 12px;
 
 }
 /* .edit-delete-btns {
