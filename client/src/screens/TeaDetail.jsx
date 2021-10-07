@@ -33,9 +33,10 @@ export default function FoodDetail(props) {
       </div>
 
       <div className="screen-links">
-        <h3 className="tea-link">
-          -- Tea Detail --
+        <h3 className="tea-link1">
+          - Tea Detail -
         </h3>
+        <hr />
         </div>
 
       {/* {props.teas.map((tea) => ( */}
@@ -54,22 +55,22 @@ export default function FoodDetail(props) {
             <p>{teaItem.description}</p>
             <p>notes: {teaItem.flavor.name}</p>
           </div>
-          </div>
           {/* <br /> */}
-          </div>
         {props.currentUser &&
           <div className="edit-delete-btns">
          
             <Link to={`/teas/${teaItem.id}/edit`}>
-              <button>| EDIT |</button>
+              <button className='editbtn'>  EDIT </button>
             </Link>
 
-            <button onClick={() => { props.handleTeaDelete(teaItem.id) }}>
-              | DELETE |
+            <button classname='deletebtn' onClick={() => { props.handleTeaDelete(teaItem.id) }}>
+              DELETE 
             </button>
-            <hr />
+           
           </div>
         }
+        </div>
+        </div>
         {/* </div> */}
         </div>
       {/* ))} */}

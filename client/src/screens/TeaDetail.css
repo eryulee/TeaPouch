@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  background-color: #000000;
+  filter: opacity(87%);
 }
 
 #detailpic {
@@ -22,6 +24,20 @@
   flex-direction: column;
 }
 
+.teaItem-details {
+  color: #ffffff;
+}
+
+.tea-link1 {
+  text-decoration: none;
+  margin-right: 25px;
+  margin-bottom: 40px;
+  color: #ffffff;
+  font-weight: 340;
+  letter-spacing: 6px;
+  font-size: 17px;
+
+}
 /* .edit-delete-btns {
   display: flex;
   flex-direction: row;
