@@ -35,7 +35,8 @@ export default function Login(props) {
     }}>
       <h3 className='lg'></h3>
       <label className='lg-label'>
-            
+            {/* Username: */}
+        <br />    
         <input className='username'
           type='text'
           name='username'
@@ -45,8 +46,9 @@ export default function Login(props) {
         />
       </label>
       <br />
-      <label>
-       
+      <label classname='pw-label'>
+            {/* Password: */}
+            <br/>
        <input className='password'
           type='password'
           name='password'

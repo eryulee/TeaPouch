@@ -44,12 +44,24 @@
     margin-right: 10px;
    
   }
+  label{
+    color: #7d7f7c;
+    letter-spacing: 3px;
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+
+  .lg-label {
+    color: #7d7f7c;
+  }
+
 
   .username {
     padding-top: 7px;
     padding-bottom: 7px;
     width: 55%;
     margin-bottom: 15px;
+   
   }
   
   .password {

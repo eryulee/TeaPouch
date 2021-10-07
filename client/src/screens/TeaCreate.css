@@ -1,6 +1,6 @@
 .addscreen {
   background-color: #000000;
-  filter: opacity(87%)
+  filter: opacity(77%)
 }
 
 .addinput {
@@ -18,7 +18,7 @@
 }
 
 ::placeholder {
-  color: #ffffff;
+  color: #7d7f7c;
 }
 
 .signin3 {

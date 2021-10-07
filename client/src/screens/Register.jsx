@@ -37,7 +37,8 @@ export default function Register(props) {
     >
       
       <label className='lg-label'>
-            
+          {/* Username: */}
+          <br />
             <input className='username'
               type='text'
               name='username'
@@ -48,7 +49,8 @@ export default function Register(props) {
           </label>
       <br />
       <label>
-        
+          {/* Email: */}
+          <br />
         <input className='email'
           type='text'
           name='email'
@@ -59,7 +61,8 @@ export default function Register(props) {
       </label>
       <br />
       <label>
-       
+       {/* Password: */}
+       <br />
        <input className='password'
           type='password'
           name='password'
