@@ -12,8 +12,10 @@
 
 .flavorsdiv {
   margin-bottom: 10px;
+  filter: opacity(87%);
 }
 
 .screen-links {
   padding-bottom: 30px;
+  filter: opacity(87%);
 }

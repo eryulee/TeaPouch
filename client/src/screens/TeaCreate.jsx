@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import './TeaCreate.css'
 
 export default function TeaCreate(props) {
   const [formData, setFormData] = useState({
@@ -21,39 +22,76 @@ export default function TeaCreate(props) {
   };
 
   return (
+    <div className='addscreen'>
     <form onSubmit={(e) => {
       e.preventDefault()
       props.handleTeaCreate(formData)
     }}>
-      <h1>TeaPouch</h1>
-      <h3>Create Tea </h3>
-      <hr />
-      <input
+     
+      
+      
+      <div className='login_logo1'>
+        <img src='https://i.imgur.com/khYD43E.png'
+          alt='pouch'
+        id='login-pouch1' />
+      </div>
+
+      <div className='teap1'>
+      <h3 className='tp1'>TeaPouch</h3>
+      </div>
+
+      <div className="screen-links">
+        <h3 className="tea-link">
+          -- Add Tea --
+        </h3>
+        </div>
+        
+        <div className="add-img"> 
+            <img src='https://i.imgur.com/Cy9OiD4.png'
+              alt='add-img'
+          id='add-img' /></div>
+
+      <label>
+      <input className='addinput'
         onChange={handleChange}
         value={formData.name}
         name="name"
-        type="text"
+          type="text"
+          placeholder='Name...'
       />
-      <input
+      </label>
+      <br />
+      <label>
+      <input className='addinput'
         onChange={handleChange}
         value={formData.price}
         name="price"
-        type="number"
+          type="number"
+          placeholder='Price...'
       />
-
-      <input
+      </label>
+      <br />
+      <label>
+      <input className='addinput'
         onChange={handleChange}
         value={formData.description}
         name="description"
-        type="text"
+          type="text"
+          placeholder='description...'
       />
-      <input
+      </label>
+      <br />
+      <label>
+      <input className='addinput'
         onChange={handleChange}
         value={formData.image_url}
         name="image_url"
-        type="text"
+          type="text"
+          placeholder='Image url...'
       />
-      <select name='flavor_id' onChange={handleChange} defaultValue='default'>
+      </label>
+      <br />
+      <select className='addinput' name='flavor_id' onChange={handleChange} defaultValue='default'>
         <option disabled value='default'>
           -- Select a Flavor --
         </option>
@@ -61,8 +99,10 @@ export default function TeaCreate(props) {
           <option value={flavor.id}>{flavor.name}</option>
         ))}
         </select>
-      <button>Submit</button>
+        <br />
+      <button className='signin3'>Submit</button>
       <hr />
-    </form>
+      </form>
+      </div>
   );
 }

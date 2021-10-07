@@ -48,7 +48,7 @@ export default function FoodDetail(props) {
           </div>
 
           <div className="edit-delete-btns">
-            <Link to="/teas/:id">
+            <Link to={`/teas/${teaItem.id}/edit`}>
               <button>| EDIT |</button>
             </Link>
 

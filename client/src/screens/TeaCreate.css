@@ -1,0 +1,41 @@
+.addscreen {
+  background-color: #000000;
+  filter: opacity(87%)
+}
+
+.addinput {
+  color: #ffffff;
+  background-color: #000000;
+  border-color: 1px solid #ffffff;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 5px;
+  padding-left: 5px;
+  width: 40%;
+  letter-spacing: 2px;
+  border-radius: 5px;
+}
+
+::placeholder {
+  color: #ffffff;
+}
+
+.signin3 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  color: #ffffff;
+  background-color: #92b188;
+  letter-spacing: 3px;
+  font-weight: 600;
+  border:  none;
+}
+
+#add-img {
+  width: 800px;
+  height: 500px;
+}

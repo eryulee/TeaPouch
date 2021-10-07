@@ -124,15 +124,18 @@ function App() {
             <Flavors flavors={flavors} />
           </Layout>
         </Route>
-        {/* <Route path='/teas/:id/edit'>
-           <TeaEdit teas={teas} handleTeaUpdate={handleTeaUpdate}  /> 
-          </Route> */}
+        <Route path='/teas/:id/edit'>
+        <Layout currentUser={currentUser} handleLogout={handleLogout}>
+           <TeaEdit teas={teas} flavors={flavors} handleTeaUpdate={handleTeaUpdate}  /> 
+           </Layout>
+          </Route>
         <Route path="/teas/new">
           <Layout currentUser={currentUser} handleLogout={handleLogout}>
             <TeaCreate
               handleTeaCreate={handleTeaCreate}
               currentUser={currentUser}
               flavors={flavors}
+              // handleRedirect={handleRedirect}
             />
           </Layout>
         </Route>
