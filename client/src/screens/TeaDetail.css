@@ -3,7 +3,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   background-color: #000000;
-  filter: opacity(87%);
+  filter: opacity(83%);
 }
 
 #detailpic {
@@ -35,16 +35,18 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 70px;
+  background-color: 000000;
+  filter: opacity(83%);
 }
 
 .teaItem-details {
-  color: #ffffff;
+  color: #f8f0f3;
   font-size: 13px;
 }
 
 .tea-link1 {
   text-decoration: none;
-  margin-right: 25px;
+  /* margin-right: 25px; */
   margin-bottom: 40px;
   color: #ffffff;
   font-weight: 340;
@@ -52,8 +54,109 @@
   font-size: 12px;
 
 }
-/* .edit-delete-btns {
-  display: flex;
-  flex-direction: row;
 
-} */
+
+.editbtn {
+  margin-right: 25px;
+  background-color: #000000;
+  border: none;
+  color: #ffffff;
+}
+
+.deletebtn {
+  border: none;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+@media only screen and (min-width: 768px) {
+  #detailpic {
+    height: 80vh;
+    position: relative;
+    left: -450%;
+    margin-bottom: 150px;
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .detail-img {
+    height: 550px;
+    width: 70px;
+    padding-bottom: 100px;
+  }
+
+  .full-tea {
+    /* display: flex;
+    flex-direction: row; */
+    display: grid;
+    grid-template-columns: 35% 60%;
+   
+  }
+
+  .teaItem-details {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 255;
+    margin-top: 80px;
+    letter-spacing: 2px;
+  }
+
+  .tea-link1 {
+    text-decoration: none;
+    /* margin-right: 25px; */
+    margin-bottom: 40px;
+    color: #ffffff;
+    font-weight: 340;
+    letter-spacing: 3px;
+    font-size: 15px;
+  
+  }
+  
+}
+
+@media only screen and (min-width: 1024px) {
+  #detailpic {
+    height: 80vh;
+    position: relative;
+    left: -570%;
+    margin-bottom: 150px;
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .detail-img {
+    height: 850px;
+    width: 70px;
+    padding-bottom: 100px;
+  }
+
+  .full-tea {
+    /* display: flex;
+    flex-direction: row; */
+    display: grid;
+    grid-template-columns: 38% 50%;
+   
+  }
+
+  .teaItem-details {
+    color: #ffffff;
+    font-size: 23px;
+    font-weight: 255;
+    margin-top: 150px;
+    letter-spacing: 2px;
+  }
+
+  
+
+  .tea-link1 {
+    text-decoration: none;
+    /* margin-right: 25px; */
+    margin-bottom: 40px;
+    color: #ffffff;
+    font-weight: 340;
+    letter-spacing: 3px;
+    font-size: 19px;
+  
+  }
+  
+}

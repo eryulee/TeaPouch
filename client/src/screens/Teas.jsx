@@ -8,7 +8,7 @@ function Teas(props) {
     <div className='bbody'>
       <div className='login_logo1'>
         <img src='https://i.imgur.com/khYD43E.png'
-          alt='pouch'
+          alt='login-pouch1'
         id='login-pouch1' />
       </div>
 
@@ -24,6 +24,7 @@ function Teas(props) {
           |FLAVOR GUIDE|
         </Link>
       </div>
+        <hr />
 
       {/* {props.teas.map((tea) => (
         <div key={tea.id}>
@@ -47,7 +48,7 @@ function Teas(props) {
                 className="card-img"
                 variant="top"
                 src={tea.image_url}
-                style={{ height: "9rem"}}
+                style={{ width: "10rem"}}
               />
               <Card.Body style={{ height: "7rem" }}>
                 <Card.Title className="card-name">{tea.name}</Card.Title>

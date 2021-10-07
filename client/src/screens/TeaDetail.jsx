@@ -50,7 +50,7 @@ export default function FoodDetail(props) {
           
         <div className='exclude-image'>
           <div className="teaItem-details">
-              <p>{teaItem.name}</p>
+              <p className='teaitemname'>{teaItem.name}</p>
               <p>------------</p>
               <p>${teaItem.price}</p>
               <p>-------</p>
@@ -66,7 +66,7 @@ export default function FoodDetail(props) {
               <button className='editbtn'>  EDIT </button>
             </Link>
 
-            <button classname='deletebtn' onClick={() => { props.handleTeaDelete(teaItem.id) }}>
+            <button classname='deletebtn' onClick={() => { props.handleTeaDelete(teaItem.id) }} >
               DELETE 
             </button>
            
