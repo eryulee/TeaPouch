@@ -1,0 +1,19 @@
+.flavor-screen {
+  background-color: #000000;
+  filter: opacity(87%)
+}
+
+.flavor-text {
+  color: #ffffff;
+  filter: opacity(87%);
+  letter-spacing: 5px;
+  margin-bottom: 30px;
+}
+
+.flavorsdiv {
+  margin-bottom: 10px;
+}
+
+.screen-links {
+  padding-bottom: 30px;
+}

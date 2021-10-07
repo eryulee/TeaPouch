@@ -29,10 +29,7 @@
 //     setFormData((prevState) => ({
 //       ...prevState,
 //       [name]: value,
-//       [price]: value,
-//       [description]: value,
-//       [image_url]: value,
-//       [flavor_id]: value,
+//       
 //     }));
 //   };
 
