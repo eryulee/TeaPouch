@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+2');
+
+.tea-link {
+  font-family: 'Baloo 2';
+  font-weight: 260;
+  letter-spacing: 3px;
+  font-size: 16px;
+}
+
 .addscreen {
   background-color: #000000;
   filter: opacity(77%)
@@ -34,6 +43,7 @@
   letter-spacing: 3px;
   font-weight: 600;
   border:  none;
+  border-radius: 3px;
 }
 
 #add-img {
@@ -80,24 +90,69 @@
 
 @media only screen and (max-width: 376px) {
   #add-img {
-    height: 50vh;
+    height: 30vh;
     position: relative;
-    left: -425%;
-    
-    margin-bottom: 550px;
+    left: -225%;
+   }
+
+   .tea-link {
+     font-size: 13px;
+   }
+
+   .teaItem1-details {
+    margin-top: 0px;
   }
 
-  .add-input {
+  .addinput {
     width: 95%;
+    margin-bottom: 3px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-right: 5px;
+  padding-left: 5px;
+  width: 95%;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  margin-top: 14px;
   }
-}
 
-@media only screen and (max-width: 426px) {
   .full-tea1 {
     /* display: flex;
     flex-direction: row; */
     display: grid;
-    grid-template-columns: 45% 50%;
+    grid-template-columns: 40% 50%;
+   
+  }
+}
+
+@media only screen and (min-width: 425px) {
+  #add-img {
+    height: 40vh;
+    position: relative;
+    left: -295%;
+   }
+
+   .tea-link {
+    font-size: 15px;
+  }
+
+   .addinput {
+    width: 95%;
+    margin-bottom: 5px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-right: 5px;
+  padding-left: 5px;
+  width: 95%;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  margin-top: 8px;
+  }
+  .full-tea1 {
+    /* display: flex;
+    flex-direction: row; */
+    display: grid;
+    grid-template-columns: 45% 45%;
    
   }
   .teaItem1-details {
@@ -127,6 +182,14 @@
     grid-template-columns: 35% 60%;
    
   }
+  .addinput {
+    width: 65%;
+    margin-top: 20px;
+    padding-top: 11px;
+  padding-bottom: 11px;
+  padding-right: 5px;
+  padding-left: 5px;
+  }
 
   .exclude-image {
     display: flex;
@@ -152,6 +215,10 @@
     display: grid;
     grid-template-columns: 35% 50%;
    
+  }
+
+  .addinput {
+    width: 85%;
   }
 }
 

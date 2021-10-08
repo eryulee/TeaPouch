@@ -41,7 +41,7 @@ export default function TeaCreate(props) {
         </div>
 
         <div className="screen-links">
-          <h3 className="tea-link">-- Add Tea --</h3>
+          <h3 className="tea-link">-- ADD A TEA --</h3>
           <hr />
         </div>
 

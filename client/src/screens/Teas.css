@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+2');
+
 .tea-div {
   /* border: 2px solid #d3d3d3; */
   /* width: 30%; */
@@ -47,6 +49,7 @@
   letter-spacing: 4px;
   font-weight: 370;
   text-decoration: none;
+  font-family: 'Baloo 2';
 }
 
 .tea-div:hover {
@@ -90,7 +93,8 @@
     /* margin-bottom: 40px; */
     margin-top: 0px;
     background-color: #000000;
-    filter: opacity(87%)
+    filter: opacity(87%);
+    font-family: 'Baloo 2';
     
   }
 
@@ -99,6 +103,8 @@
     margin-right: 25px;
     margin-bottom: 40px;
     color: #ffffff;
+    font-family: 'Baloo 2';
+    letter-spacing: 1px;
 
   }
 
@@ -106,6 +112,8 @@
     text-decoration: none;
     margin-bottom: 40px;
     color: #ffffff;
+    font-family: 'Baloo 2';
+    letter-spacing: 1px;
   }
 
   .listingpage {
@@ -137,6 +145,8 @@
     letter-spacing: 3px;
     font-weight: 600;
     border:  none;
+    font-family: 'Baloo 2';
+    border-radius: 5px;
   }
 
   .bbody {
@@ -147,18 +157,21 @@
   @media only screen and (max-width: 426px) {
     .card-name {
       font-size: 13px;
+      
     }
     .tea-div {
       width: 11rem;
       height: 12rem;
     }
+
+    
     
     
   }
   
   @media only screen and (max-width: 376px) {
     .card-name {
-      font-size: 11px;
+      font-size: 13px;
     }
     
     .card-img {
@@ -197,6 +210,14 @@
       font-size: 26px;
      
       
+    }
+
+    .tea-link {
+      letter-spacing: 3px;
+    }
+
+    .flavors-link {
+      letter-spacing: 3px;
     }
   }
 

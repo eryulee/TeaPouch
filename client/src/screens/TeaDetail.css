@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+2');
+
 .main-detail {
   display: flex;
   flex-direction: column;
@@ -42,6 +44,7 @@
 .teaItem-details {
   color: #f8f0f3;
   font-size: 13px;
+  font-family: 'Baloo 2'
 }
 
 .tea-link1 {
@@ -52,6 +55,7 @@
   font-weight: 340;
   letter-spacing: 3px;
   font-size: 12px;
+  font-family: 'Baloo 2'
 
 }
 
@@ -67,6 +71,7 @@
   color: #ffffff;
   font-size: 15px;
   letter-spacing: 3px;
+  font-family: 'Baloo 2'
 }
 
 .deletebtn {
@@ -75,15 +80,20 @@
   color: #ffffff;
   font-size: 15px;
   letter-spacing: 3px;
+  font-family: 'Baloo 2'
 }
  
 @media only screen and (max-width: 427px) {
   .editbtn {
-    font-size: 10px;
+    font-size: 13px;
   }
 
   .deletebtn {
-    font-size: 10px;
+    font-size: 13px;
+  }
+
+  .teaItem-details {
+    font-size: 14px;
   }
 }
 
@@ -113,7 +123,7 @@
 
   .teaItem-details {
     color: #ffffff;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 255;
     margin-top: 80px;
     letter-spacing: 2px;
