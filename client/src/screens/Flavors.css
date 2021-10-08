@@ -2,12 +2,12 @@
 
 .flavor-screen {
   background-color: #000000;
-  filter: opacity(87%)
+  filter: opacity(80%)
 }
 
 .flavor-text {
   color: #ffffff;
-  filter: opacity(87%);
+  filter: opacity(80%);
   letter-spacing: 5px;
   margin-bottom: 30px;
   font-family: 'Baloo 2'
@@ -15,12 +15,12 @@
 
 .flavorsdiv {
   margin-bottom: 10px;
-  filter: opacity(87%);
+  filter: opacity(80%);
 }
 
 .screen-links {
   padding-bottom: 30px;
-  filter: opacity(87%);
+  filter: opacity(80%);
 }
 
 .flavors-link {
