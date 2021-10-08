@@ -26,7 +26,8 @@ export default function Flavors(props) {
           </Link>
          
         </div>
-        </div>
+      </div>
+     
 
     <div className='flavorsdiv'>
       

@@ -65,7 +65,7 @@
 
 .editbtn {
  
-  margin-right: 10px;
+  margin-right: 25px;
   background-color: #000000;
   border: none;
   color: #ffffff;
@@ -88,7 +88,7 @@
 @media only screen and (max-width: 427px) {
   .editbtn {
     font-size: 12px;
-    margin-right: 0px;
+    margin-right: 18px;
   }
 
   .deletebtn {
