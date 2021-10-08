@@ -83,19 +83,16 @@
   font-family: 'Baloo 2'
 }
 
-@media only screen and (max-width: 376px) {
-  .editbtn {
-    margin-right: 5px;
-  }
-}
+
  
 @media only screen and (max-width: 427px) {
   .editbtn {
-    font-size: 13px;
+    font-size: 12px;
+    margin-right: -5px;
   }
 
   .deletebtn {
-    font-size: 13px;
+    font-size: 12px;
   }
 
   .teaItem-details {
