@@ -10,6 +10,7 @@ import TeaDetail from "./screens/TeaDetail";
 import "./App.css";
 import Login from "./screens/Login";
 import Register from "./screens/Register";
+// import { BoxesLoader } from "react-awesome-loaders";
 import {
   verifyUser,
   loginUser,
@@ -105,7 +106,12 @@ function App() {
   return (
     <div className="App">
       {/* <div className='mega-grid'> */}
-     
+      {/* <BoxesLoader
+        boxColor={"#def1e7"}
+        style={{ marginBottom: "20px" }}
+        desktopSize={"128px"}
+        mobileSize={"80px"}
+      /> */}
       <Route path="/login">
         <Login handleLogin={handleLogin} />
       </Route>

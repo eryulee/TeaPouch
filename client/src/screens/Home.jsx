@@ -18,8 +18,10 @@ function Home (props) {
         id='pouch' />
             <h3 className='home-name'>TeaPouch</h3>
             <h4 className='mission-statement'>
-            At TeaPouch, we provide the best quality  loose leaf organic teas to create our distinctive collection.  Our passion is to elevate the health and happiness of our customers, one cup at a time.
+            {/* At TeaPouch, we provide the best quality  loose leaf organic teas to create our distinctive collection.  Our passion is to elevate the health and happiness of our customers, one cup at a time. */}
+            At TeaPouch, we provide a plaform for tea enthusiasts to share their favorite tea blends. Join our community and share your favorite blends! 
           </h4>
+          
           <Link to='/teas' id='listing-link' >
                   <button className='tea-browse-link'>Browse Our Collection</button>
             </Link>
