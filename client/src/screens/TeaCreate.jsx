@@ -22,7 +22,7 @@ export default function TeaCreate(props) {
   };
 
   return (
-    <div className='addscreen'>
+    <div className='main-detail'>
     <form onSubmit={(e) => {
       e.preventDefault()
       props.handleTeaCreate(formData)
@@ -44,6 +44,7 @@ export default function TeaCreate(props) {
         <h3 className="tea-link">
           -- Add Tea --
         </h3>
+        <hr/>
         </div>
         
         <div className="add-img"> 

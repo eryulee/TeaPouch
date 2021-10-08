@@ -63,11 +63,11 @@ export default function FoodDetail(props) {
           <div className="edit-delete-btns">
          
             <Link to={`/teas/${teaItem.id}/edit`}>
-              <button className='editbtn'>  EDIT </button>
+              <button className='editbtn'> | EDIT | </button>
             </Link>
 
-            <button classname='deletebtn' onClick={() => { props.handleTeaDelete(teaItem.id) }} >
-              DELETE 
+            <button className='deletebtn' onClick={() => { props.handleTeaDelete(teaItem.id) }} >
+             | DELETE |
             </button>
            
           </div>
