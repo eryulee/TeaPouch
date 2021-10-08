@@ -38,8 +38,8 @@ export default function TeaEdit(props) {
   };
 
   return (
-    <div className='create-form-content-container'>
-    <div className="addscreen">
+    <div className='main-detail2'>
+    
       <form
         onSubmit={(e) => {
           e.preventDefault();
@@ -59,15 +59,23 @@ export default function TeaEdit(props) {
         </div>
 
         <div className="screen-links">
-          <h3 className="tea-link">-- Edit Tea --</h3>
+            <h3 className="tea-link3">-- EDIT TEA --</h3>
+            <hr />
         </div>
 
-        <div className="add-img">
-          <img src={formData.image_url} alt="add-img" id="add-img" />
+        <div className='main-detail-content3'>
+      <div className='full-tea3'>
+        <div className="detail-img3">
+          <img src={formData.image_url}
+            alt="edit-img"
+            id="edit-img"
+          />
         </div>
 
+        <div className='exclude-image3'>
+      <div className='teaItem3-details'>
         <input
-          className="addinput"
+          className="addinput3"
           onChange={handleChange}
           value={formData.name}
           name="name"
@@ -76,10 +84,9 @@ export default function TeaEdit(props) {
 
         <br />
 
-
-        <div className='edit-input-container'>
+       
         <input
-          className="addinput"
+          className="addinput3"
           onChange={handleChange}
           value={formData.price}
           name="price"
@@ -89,7 +96,7 @@ export default function TeaEdit(props) {
         <br />
 
         <input
-          className="addinput"
+          className="addinput3"
           onChange={handleChange}
           value={formData.description}
           name="description"
@@ -99,7 +106,7 @@ export default function TeaEdit(props) {
         <br />
 
         <input
-          className="addinput"
+          className="addinput3"
           onChange={handleChange}
           value={formData.image_url}
           name="image_url"
@@ -109,7 +116,7 @@ export default function TeaEdit(props) {
         <br />
         <select
           value={formData.flavor_id}
-          className="addinput"
+          className="addinput3"
           name="flavor_id"
           onChange={handleChange}
           defaultValue="default"
@@ -121,12 +128,19 @@ export default function TeaEdit(props) {
             <option value={flavor.id}>{flavor.name}</option>
             ))}
         </select>
-        <br />
-        <button className="signin3">Submit</button>
-        <hr />
-        </div>    
-        </form>
+       
+                </div>
+                
+          <div className='edit-delete-btns'>
+        <button className="signin4">Submit</button>
         </div>
+       
+        </div>
+        </div>
+        </div>  
+        
+        </form>
+       
     </div>
   );
 }
