@@ -104,7 +104,8 @@
     margin-bottom: 40px;
     color: #ffffff;
     font-family: 'Baloo 2';
-    letter-spacing: 1px;
+    letter-spacing: 3px;
+    font-size: 16px;
 
   }
 
@@ -113,7 +114,8 @@
     margin-bottom: 40px;
     color: #ffffff;
     font-family: 'Baloo 2';
-    letter-spacing: 1px;
+    letter-spacing: 3px;
+    font-size: 16px;
   }
 
   .listingpage {
@@ -130,6 +132,7 @@
     margin-top: 0;
     filter: opacity(87%);
     margin-bottom: 20px;
+    font-family: 'Baloo 2';
 
   }
 
@@ -164,6 +167,10 @@
       height: 12rem;
     }
 
+    .flavors-link {
+      font-size: 15px;
+    }
+
     
     
     
@@ -187,6 +194,14 @@
       font-size: 19px;
     font-weight: 390;
     letter-spacing: 9px;
+    }
+
+    .tea-link {
+      font-size: 13px;
+    }
+
+    .flavors-link {
+      font-size: 13px;
     }
   }
 
@@ -214,10 +229,12 @@
 
     .tea-link {
       letter-spacing: 3px;
+      
     }
 
     .flavors-link {
       letter-spacing: 3px;
+      font-size: 15px;
     }
   }
 

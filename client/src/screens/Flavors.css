@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+2');
+
 .flavor-screen {
   background-color: #000000;
   filter: opacity(87%)
@@ -8,6 +10,7 @@
   filter: opacity(87%);
   letter-spacing: 5px;
   margin-bottom: 30px;
+  font-family: 'Baloo 2'
 }
 
 .flavorsdiv {
@@ -18,4 +21,8 @@
 .screen-links {
   padding-bottom: 30px;
   filter: opacity(87%);
+}
+
+.flavors-link {
+  font-family: 'Baloo 2';
 }

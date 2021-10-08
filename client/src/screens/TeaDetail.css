@@ -65,7 +65,7 @@
 
 .editbtn {
  
-  margin-right: 15px;
+  margin-right: 10px;
   background-color: #000000;
   border: none;
   color: #ffffff;
@@ -81,6 +81,12 @@
   font-size: 15px;
   letter-spacing: 3px;
   font-family: 'Baloo 2'
+}
+
+@media only screen and (max-width: 376px) {
+  .editbtn {
+    margin-right: 5px;
+  }
 }
  
 @media only screen and (max-width: 427px) {
@@ -176,11 +182,11 @@
   }
 
   .editbtn {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .deletebtn {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   
