@@ -32,11 +32,13 @@
   
 }
 .collection {
-  background-image: url('https://i.imgur.com/cyCwBAJ.jpg');
+  /* background-image: url('https://i.imgur.com/cyCwBAJ.jpg'); */
+  background-image: url('https://i.imgur.com/Qrh97nu.jpg');
   background-size: cover;
   height: 300px;
-  filter: opacity(80%);
+  filter: opacity(90%);
   padding-bottom: 50px;
+  /* mask-image: linear-gradient(180dg, #8000 50%, transparent); */
 }
 
 .tea-browse-link {
@@ -86,6 +88,7 @@
   margin-right: 10%;
   padding-top: 0px;
   margin-top: 5px;
+  
   
 }
 
