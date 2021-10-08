@@ -6,7 +6,7 @@ import './TeaDetail.css'
 
 export default function FoodDetail(props) {
   const [teaItem, setTeaItem] = useState(null);
-
+console.log(props.currentUser)
   const { id } = useParams();
 
   useEffect(() => {
@@ -58,8 +58,9 @@ export default function FoodDetail(props) {
               <p>------------</p>
             <p>notes: {teaItem.flavor.name}</p>
           </div>
-          {/* <br /> */}
-        {props.currentUser &&
+            {/* <br /> */}
+            
+        {props.currentUser.username === "admin" &&
           <div className="edit-delete-btns">
          
             <Link to={`/teas/${teaItem.id}/edit`}>

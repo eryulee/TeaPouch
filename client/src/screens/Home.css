@@ -32,8 +32,8 @@
   
 }
 .collection {
-  /* background-image: url('https://i.imgur.com/cyCwBAJ.jpg'); */
-  background-image: url('https://i.imgur.com/Qrh97nu.jpg');
+  background-image: url('https://i.imgur.com/Qrh97nu.jpg?1');
+  /* background-image: url('https://i.imgur.com/Qrh97nu.jpg'); */
   background-size: cover;
   height: 280px;
   filter: opacity(100%);
@@ -135,14 +135,24 @@ h3.home-name {
 
 @media only screen and (min-width: 768px) {
   .mission-statement {
+    margin-top: 20px;
     margin-bottom: 15px;
     margin-left: 20%;
     margin-right: 20%;
+    font-weight: 600;
+    /* filter: opacity(80%); */
+    
   }
 
   .home-name {
     margin-bottom: 0;
-    letter-spacing: 15px;
+    letter-spacing: 18px;
+    font-weight: bold;
+    /* text-align: left; */
+  }
+
+  .collection {
+    filter: opacity(100%);
   }
 }
 

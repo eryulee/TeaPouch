@@ -101,6 +101,7 @@ function App() {
     setCurrentUser(null);
     localStorage.removeItem("authToken");
     removeToken();
+    history.push("/");
   };
 
   return (

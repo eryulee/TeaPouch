@@ -16,6 +16,7 @@ function Home (props) {
         <img src='https://i.imgur.com/khYD43E.png'
           alt='pouch'
         id='pouch' />
+          
             <h3 className='home-name'>TeaPouch</h3>
             <h4 className='mission-statement'>
             {/* At TeaPouch, we provide the best quality  loose leaf organic teas to create our distinctive collection.  Our passion is to elevate the health and happiness of our customers, one cup at a time. */}
@@ -26,9 +27,7 @@ function Home (props) {
                   <button className='tea-browse-link'>Browse Our Collection</button>
             </Link>
             </div>
-        {/* <img src='https://i.imgur.com/cyCwBAJ.jpg'
-          alt='holding-tea'
-            id='holding-tea' /> */}
+        
         
       </div>
 
