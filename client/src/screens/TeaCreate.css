@@ -12,9 +12,10 @@
   padding-bottom: 10px;
   padding-right: 5px;
   padding-left: 5px;
-  width: 40%;
+  width: 85%;
   letter-spacing: 2px;
   border-radius: 5px;
+  margin-top: 5px;
 }
 
 ::placeholder {
@@ -26,7 +27,7 @@
   padding-bottom: 10px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   margin-bottom: 40px;
   color: #ffffff;
   background-color: #92b188;
@@ -36,6 +37,124 @@
 }
 
 #add-img {
-  width: 800px;
-  height: 500px;
+  height: 50vh;
+  position: relative;
+  left: -385%;
+  margin-bottom: 150px;
 }
+
+.main-detail1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #000000;
+  filter: opacity(80%);
+}
+
+.detail-img1 {
+  height: 200px;
+  width: 65px;
+  padding-bottom: 80px;
+}
+
+.full-tea1 {
+  /* display: flex;
+  flex-direction: row; */
+  display: grid;
+  grid-template-columns: 35% 60%;
+ 
+}
+
+.main-detail-content1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.exclude-image {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  background-color: 000000;
+  filter: opacity(83%);
+}
+
+@media only screen and (max-width: 376px) {
+  #add-img {
+    height: 50vh;
+    position: relative;
+    left: -425%;
+    
+    margin-bottom: 550px;
+  }
+
+  .add-input {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .full-tea1 {
+    /* display: flex;
+    flex-direction: row; */
+    display: grid;
+    grid-template-columns: 45% 50%;
+   
+  }
+  .teaItem1-details {
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (min-width: 767px) {
+  #add-img {
+    height: 70vh;
+    position: relative;
+    left: -495%;
+    
+    margin-bottom: 550px;
+  }
+
+  .detail-img1 {
+    height: 200px;
+    width: 65px;
+    padding-bottom: 180px;
+  }
+
+  .full-tea1 {
+    /* display: flex;
+    flex-direction: row; */
+    display: grid;
+    grid-template-columns: 35% 60%;
+   
+  }
+
+  .exclude-image {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    background-color: 000000;
+    filter: opacity(83%);
+  }
+
+  .main-detail-content1 {
+    margin-bottom: 60px;
+  }
+
+  .teaItem1-details {
+    margin-top: 110px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .full-tea1 {
+    /* display: flex;
+    flex-direction: row; */
+    display: grid;
+    grid-template-columns: 35% 50%;
+   
+  }
+}
+
+
+
+
