@@ -27,7 +27,7 @@
   justify-content: center;
   align-items: center;
   background-color: #000000;
-  filter: opacity(87%)
+  filter: opacity(80%)
 
 }
 
@@ -35,7 +35,7 @@
   width:  100%;
   color: #000000;
   background-color: #000000;
-  filter: opacity(87%)
+  filter: opacity(80%)
   /* width: 18rem; */
   
 }
@@ -81,7 +81,7 @@
   margin-top: 0px;
   background-color: #000000;
   margin-bottom: 0;
-  filter: opacity(87%)
+  filter: opacity(80%)
   }
 
   .tp1 {
@@ -93,7 +93,7 @@
     /* margin-bottom: 40px; */
     margin-top: 0px;
     background-color: #000000;
-    filter: opacity(87%);
+    filter: opacity(80%);
     font-family: 'Baloo 2';
     
   }
@@ -154,7 +154,7 @@
 
   .bbody {
     background-color: #000000;
-    filter: opacity(87%)
+    filter: opacity(80%)
   }
 
   @media only screen and (max-width: 426px) {
