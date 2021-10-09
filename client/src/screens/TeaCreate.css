@@ -123,6 +123,15 @@
     grid-template-columns: 40% 50%;
    
   }
+
+  .edit-delete-btns1 {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 45px;
+   
+    
+  }
 }
 
 @media only screen and (min-width: 425px) {

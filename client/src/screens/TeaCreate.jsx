@@ -117,7 +117,7 @@ export default function TeaCreate(props) {
            
               </div>
 
-          <div className='edit-delete-btns'>    
+          <div className='edit-delete-btns1'>    
             <button className="signin3">Submit</button>
            </div>
           </div>

@@ -131,7 +131,7 @@ export default function TeaEdit(props) {
        
                 </div>
                 
-          <div className='edit-delete-btns'>
+          <div className='edit-delete-btns1'>
         <button className="signin4">Submit</button>
         </div>
        
